@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Inventory\Products\Exceptions;
+
+use Doctrine\Instantiator\Exception\InvalidArgumentException;
+
+class ProductInvalidArgumentException extends InvalidArgumentException
+{
+	public function render($request)
+    {
+        return "Product Invalid Argument";
+    }
+}
+
+
